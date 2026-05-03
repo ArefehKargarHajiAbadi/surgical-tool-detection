@@ -1,0 +1,8 @@
+ultralytics==8.2.0           # YOLOv8
+opencv-python==4.9.0.80
+numpy==1.24.3
+torch==2.2.0                  # optional, for GPU
+torchvision==0.17.0
+boxmot==10.0.0                # for tracking (BoT‑SORT)
+python-dotenv==1.0.0
+pyyaml==6.0

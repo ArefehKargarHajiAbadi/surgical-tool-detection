@@ -1,0 +1,20 @@
+data:
+  dataset_yaml: data/datasets/surgical_dataset.yaml  # YOLO format dataset config
+  img_size: 640
+  batch_size: 16
+  workers: 8
+
+train:
+  epochs: 100
+  lr0: 0.01
+  patience: 20
+  augment: true
+  project: outputs/train
+  name: yolo_surgical
+
+inference:
+  conf: 0.25
+  iou: 0.45
+  max_det: 300
+  classes: [0,1,2,3]        # e.g., 0:scalpel,1:forceps,2:clipper,3:retractor
+  tracker: botsort.yaml     # optional tracking config
